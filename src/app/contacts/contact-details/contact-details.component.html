@@ -1,0 +1,78 @@
+<div class="contact-details">
+        <!-- {{userDetail| json}} -->
+       <div class="table-main">
+               <table>
+                       <tr>
+                               <td>
+
+                               </td>
+                               <td>
+                                       <div class="top-info">
+                                               <div class="photo-detail">
+                                                       <img src="/assets/images/sup.jpeg">
+                                               </div>
+                                               <div class="person-nameing">
+                                                       <h4>{{userDetail['name']}}</h4>
+                                                       <p>{{userDetail?.website}}</p>
+
+                                                       <div class="info-btns">
+                                                               <button><i class="fas fa-comments"></i> Message</button>
+                                                                
+                                                                <div class="icons-main">
+                                                                        <i class="fas fa-phone-alt"></i>
+                                                                </div>
+                                                                <div class="icons-main">
+                                                                        <i class="fas fa-comments"></i>
+                                                                </div>
+                                                                <div class="icons-main">
+                                                                        <i class="fas fa-ellipsis-h"></i>
+                                                                </div>
+                                                       </div>
+                                               </div>
+                                       </div>
+                               </td>
+                       </tr>
+                       <tr>
+                               <td><div class="name">Bio</div></td>
+                               <td><p class="table-desp">When I first got into the advertising, I was looking for the magical combination that would put website into the top
+                        search engine rankings</p></td>
+                       </tr>
+                <tr>
+                        <td>
+                                <div class="name">Email</div>
+                        </td>
+                        <td>
+                                <p class="table-desp">{{userDetail?.email}}</p>
+                                <p class="table-desp">johanna.stevens@gmail.com</p>
+                        </td>
+                </tr>
+                <tr>
+                        <td>
+                                <div class="name">Dial</div>
+                        </td>
+                        <td>
+                                <p class="table-desp">j.stevens@ymsg.com</p>
+                        </td>
+                </tr>
+                <tr>
+                        <td>
+                                <div class="name">Meeting</div>
+                        </td>
+                        <td>
+                                <p class="table-desp">http://go.betacall.com/meet/j.stevens</p>
+                        </td>
+                </tr>
+                <tr>
+                        <td>
+                                <div class="name">Phone</div>
+                        </td>
+                        <td>
+                                <p class="table-desp">{{userDetail?.phone}}</p>
+                                <p class="table-desp">439-582-1578</p>
+                        </td>
+                </tr>
+               
+
+               </table>
+       </div>
+</div>

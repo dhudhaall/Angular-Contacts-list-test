@@ -1,0 +1,38 @@
+<div class="contacts-list">
+        <div class="top-bar-contact">
+            <h4>Contacts</h4>
+        </div>
+        <div class="contacts-listing">
+            <div class="search-box">
+                <h4 class="searchHeadng">Name, email or phone number</h4>
+               
+            </div>
+            <div class="listings">
+
+                <div class="person1" *ngFor="let user of allUsers" (click)="getDetail(user)">
+                    <div class="photo">
+                        <img src="/assets/images/sup.jpeg">
+                        <span class="liveIcon"></span>
+                    </div>
+                    <div class="name-position">
+                        <h4>{{user.name}}</h4>
+                        <p>{{user.website}}</p>
+                    </div>
+                    <div class="action-icons">
+                        <div class="icons-main">
+                           <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="icons-main">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="icons-main">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+              
+
+            </div>
+        </div>
+</div>
